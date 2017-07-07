@@ -6,7 +6,7 @@ body { color: #6e6e6e; }
 
 .head-logo__red { color: #fc876d; }
 
-.main-nav { position: relative; position-width: 50%; position-height: 55px; position-float: right; }
+.main-nav { height: 55px; text-align: right; }
 
 .main-nav__list { display: none; }
 
