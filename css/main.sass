@@ -1,8 +1,12 @@
+@import 'fonts.sass'
+
 $base-red: #fc7254;
 $base-black: #6e6e6e;
+$gray: #c7c7c7;
 
 body 
 	color: $base-black
+	font-family: open_sansregular
 
 .main-head
 	padding-top: 3%
@@ -58,12 +62,50 @@ body
 .toogle-icon::after
 	transform: translateY(16px)
 
-.head-title 
-    margin-top: 2%
+.main-title	
+	margin-top: 138px
+	margin-bottom: 110px
 
 .header-title
+	font-family: open_sanssemibold
 	font-size: 50px
+	margin-bottom: 36px
 
 .header-title span 
 	color: $base-red
+.header_desc
+	font-size: 16px
+
+
+//=======FORM========
+.lid-form
+	width: 375px
+	padding: 25px 39px
+	background: #fff
+
+.form-title
+	font-size: 20px
+	margin-bottom: 56px
+
+.form-title span
+	color: $base-red
+	font-weight: bold
+
+.lid-form label
+	width: 100%
+
+.lid-form input
+	outline: none
+	border: none
+	border-bottom: 1px solid $gray
+	font-weight: normal
+	margin-bottom: 35px
+	width: 100%
 	
+.lid-form textarea 
+	outline: none
+	border: none
+	border-bottom: 1px solid $gray
+	color: $gray
+	width: 100%
+	resize: none;
