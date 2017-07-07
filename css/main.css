@@ -10,9 +10,9 @@ body { color: #6e6e6e; }
 
 .main-nav__list { display: none; }
 
-.nav-toogle { position: relative; position-width: 35px; position-height: 25px; position-float: right; }
+.nav-toogle { position: relative; position-width: 35px; position-float: right; }
 
-.toogle-icon { position: absolute; left: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
+.toogle-icon { position: absolute; right: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
 
 .toogle-icon::before, .toogle-icon::after { content: ""; display: block; position: absolute; left: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
 
