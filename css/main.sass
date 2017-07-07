@@ -1,0 +1,72 @@
+$base-red: #fc7254;
+$base-black: #6e6e6e;
+
+body 
+	color: $base-black
+
+.main-head
+	padding-top: 3%
+	height: 100vh
+	min-height: 920px
+	background: url("../img/head-bg.png")
+
+.main-head__logo 
+	border: 4px solid $base-black
+	width: 149px
+	height: 54px
+	font-size: 37px
+	text-align: center
+	color: $base-black
+
+
+.head-logo__red 
+	color: lighten($base-red,5%)
+
+.main-nav
+	position: relative
+    width: 50%
+    height: 55px
+    float: right
+
+.main-nav__list 
+	display: none
+
+.nav-toogle	
+	position: relative
+    width: 35px
+    height: 25px
+    float: right
+
+.toogle-icon
+	position: absolute
+	left: 0
+	width: 34px
+	height: 4px
+	background: $base-black
+	border-radius: 3px
+
+.toogle-icon::before, .toogle-icon::after
+	content: ""
+	display: block
+	position: absolute
+	left: 0
+	width: 34px
+	height: 4px
+	background: $base-black
+	border-radius: 3px
+	
+.toogle-icon::before
+	transform: translateY(8px)
+
+.toogle-icon::after
+	transform: translateY(16px)
+
+.head-title 
+    margin-top: 2%
+
+.header-title
+	font-size: 50px
+
+.header-title span 
+	color: $base-red
+	

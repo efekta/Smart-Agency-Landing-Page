@@ -1,0 +1,29 @@
+body { color: #6e6e6e; }
+
+.main-head { padding-top: 3%; height: 100vh; min-height: 920px; background: url("../img/head-bg.png"); }
+
+.main-head__logo { border: 4px solid #6e6e6e; width: 149px; height: 54px; font-size: 37px; text-align: center; color: #6e6e6e; }
+
+.head-logo__red { color: #fc876d; }
+
+.main-nav { position: relative; position-width: 50%; position-height: 55px; position-float: right; }
+
+.main-nav__list { display: none; }
+
+.nav-toogle { position: relative; position-width: 35px; position-height: 25px; position-float: right; }
+
+.toogle-icon { position: absolute; left: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
+
+.toogle-icon::before, .toogle-icon::after { content: ""; display: block; position: absolute; left: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
+
+.toogle-icon::before { -webkit-transform: translateY(8px); -ms-transform: translateY(8px); transform: translateY(8px); }
+
+.toogle-icon::after { -webkit-transform: translateY(16px); -ms-transform: translateY(16px); transform: translateY(16px); }
+
+.head-title { margin-top: 2%; }
+
+.header-title { font-size: 50px; }
+
+.header-title span { color: #fc7254; }
+
+/*# sourceMappingURL=main.css.map */
