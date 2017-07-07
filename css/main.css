@@ -37,7 +37,7 @@ body { color: #6e6e6e; font-family: open_sansregular; }
 
 .nav-toogle { position: relative; position-width: 35px; }
 
-.toogle-icon { position: absolute; right: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
+.toogle-icon { position: absolute; right: 0; width: 34px; height: 4px; margin-top: 17px; background: #6e6e6e; border-radius: 3px; }
 
 .toogle-icon::before, .toogle-icon::after { content: ""; display: block; position: absolute; left: 0; width: 34px; height: 4px; background: #6e6e6e; border-radius: 3px; }
 
