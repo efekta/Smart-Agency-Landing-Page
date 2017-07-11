@@ -26,6 +26,8 @@
 
 body { color: #6e6e6e; font-family: open_sansregular; }
 
+section { margin: 5% 0; }
+
 .main-head { position: relative; height: 100vh; padding-top: 5%; min-height: 920px; background: url("../img/head-bg.jpg") no-repeat bottom center; background-size: cover; }
 
 .main-head__logo { border: 4px solid #6e6e6e; width: 149px; height: 54px; font-size: 37px; text-align: center; color: #6e6e6e; }
@@ -46,9 +48,11 @@ body { color: #6e6e6e; font-family: open_sansregular; }
 
 .toogle-icon::after { -webkit-transform: translateY(16px); -ms-transform: translateY(16px); transform: translateY(16px); }
 
-.main-title { margin: 10% 0; }
+.main-title { margin: 5% 0; }
 
-.title { font-family: open_sanssemibold; font-size: 50px; margin-bottom: 36px; }
+.title { font-family: open_sanssemibold; font-size: 50px; }
+
+.head-title { margin-bottom: 36px; }
 
 .title span { color: #fc7254; }
 
