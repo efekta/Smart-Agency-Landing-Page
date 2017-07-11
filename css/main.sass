@@ -103,8 +103,6 @@ body
 	color: $base-red
 	font-weight: bold
 
-// .lid-form label
-// 	width: 100%
 
 .lid-form input
 	outline: none
@@ -124,19 +122,29 @@ body
 .btn 
 	color: #fff
 	background: $base-red
-	padding: 20px 64px
+	padding: 15px 64px
 	border-radius: 27px
 	display: block
 	margin: 0 auto
 
+.btn:hover 
+	box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08)
+
+
+.form-btn__next 
+	font-size: 24px
+	font-weight: bold
+
 //WORK
 
 .work-item 
-	width: 263px
 	position: relative
 	padding: 53px 45px	
 	color: #fff
 	vertical-align: middle
+
+.work-item:hover
+	box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21)
 
 .work-item__title
 	font-size: 20px
@@ -159,9 +167,11 @@ body
 	z-index: 2
 	background: #fff
 	color: $base-black
+	box-shadow: 0px 0px 5px 0px rgba(20, 20, 21, 0.09)
 
-.work-btn:hover
+.work-item:hover .work-btn
 	box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09)
+
 
 .work-btn__ico
 	display: inline-block
@@ -230,6 +240,7 @@ body
 	border-radius: 50px
 	background: $base-red
 	color: #fff
+
 
 
 
