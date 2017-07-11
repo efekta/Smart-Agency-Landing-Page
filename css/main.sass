@@ -1,7 +1,8 @@
 @import 'fonts.sass'
+@import 'font-awesome.css'
 
-$base-red: #fc7254;
-$base-black: #6e6e6e;
+$base-red: #fc7254
+$base-black: #6e6e6e
 $gray: #c7c7c7;
 
 body 
@@ -67,7 +68,7 @@ body
 	transform: translateY(16px)
 
 .main-title	
-	margin: 5% 0;
+	margin: 5% 0
 
 
 .title
@@ -85,6 +86,7 @@ body
 .form 
 	position: absolute
 	bottom: 0
+
 .lid-form
 	border-radius: 1px
 	width: 375px
@@ -117,12 +119,82 @@ body
 	border: none
 	border-bottom: 1px solid $gray
 	width: 100%
-	resize: none;
+	resize: none
 	margin-bottom: 21px
 .btn 
 	color: #fff
 	background: $base-red
 	padding: 20px 64px
-	border-radius: 27px;
+	border-radius: 27px
 	display: block
 	margin: 0 auto
+
+//WORK
+
+.work-item 
+	width: 263px
+	position: relative
+	padding: 53px 45px	
+	color: #fff
+	vertical-align: middle
+
+.work-item__title
+	font-size: 20px
+	display: block
+	margin-bottom: 22px
+
+.tomy 
+	background: #4eb2f7
+
+.fa 
+	font-size: 50px
+	margin-bottom: 22px
+
+.work-btn
+	padding: 20px
+	width: 90%
+	position: absolute
+	left: 5%
+	bottom: -10%
+	z-index: 2
+	background: #fff
+	color: $base-black
+
+.work-btn:hover
+	box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09)
+
+.work-btn__ico
+	display: inline-block
+	vertical-align: middle
+	width: 12px
+	height: 2px
+	background: $base-black
+	margin-right: 10px
+
+.work-btn__ico::before
+	content: ""
+	display: block
+	width: 12px
+	height: 2px
+	background: $base-black
+	transform: rotate(90deg)
+
+.set 
+	background: #c049f8
+
+.koire 
+	background: #817eff
+
+.lara 
+	background: #f74770
+
+.fa-camera-retro
+	transform: rotate(-45deg)
+
+
+
+
+
+
+
+
