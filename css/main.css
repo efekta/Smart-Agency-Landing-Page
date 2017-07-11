@@ -46,7 +46,7 @@ body { color: #6e6e6e; font-family: open_sansregular; }
 
 .toogle-icon::after { -webkit-transform: translateY(16px); -ms-transform: translateY(16px); transform: translateY(16px); }
 
-.main-title { margin: 5% 0; }
+.main-title { margin: 10% 0; }
 
 .title { font-family: open_sanssemibold; font-size: 50px; margin-bottom: 36px; }
 
