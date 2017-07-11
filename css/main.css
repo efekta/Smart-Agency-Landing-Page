@@ -34,11 +34,17 @@ section { margin: 5% 0; }
 
 .head-logo__red { color: #fc876d; }
 
-.main-nav { height: 55px; text-align: right; }
+.main-nav { position: relative; height: 55px; text-align: right; }
 
-.main-nav__list { display: none; }
+.main-nav__list { display: none; list-style: none; padding: 0; margin: 0; }
 
-.nav-toogle { position: relative; position-width: 35px; }
+.main-nav__item { margin: 10px 0; }
+
+.main-nav__link { color: #6e6e6e; text-transform: uppercase; text-decoration: none; }
+
+.main-nav__link:hover { text-decoration: none; }
+
+.nav-toogle { position: absolute; right: 0; top: 0; width: 35px; }
 
 .toogle-icon { position: absolute; right: 0; width: 34px; height: 4px; margin-top: 17px; background: #6e6e6e; border-radius: 3px; }
 

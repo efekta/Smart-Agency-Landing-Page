@@ -32,14 +32,32 @@ section
 	color: lighten($base-red,5%)
 
 .main-nav
-    height: 55px
-    text-align: right
+	position: relative
+	height: 55px
+	text-align: right
+
 
 .main-nav__list 
 	display: none
+	list-style: none
+	padding: 0
+	margin: 0
 
-.nav-toogle	
-	position: relative
+.main-nav__item
+	margin: 10px 0
+
+.main-nav__link
+	color: $base-black
+	text-transform: uppercase
+	text-decoration: none
+
+.main-nav__link:hover
+	text-decoration: none
+
+.nav-toogle
+    position: absolute
+    right: 0
+    top: 0
     width: 35px
 
 .toogle-icon
