@@ -1,9 +1,14 @@
 @import 'fonts.sass'
 @import 'font-awesome.css'
+@import '../slick/slick.scss'
+@import '../slick/slick-theme.scss'
+
 
 $base-red: #fc7254
 $base-black: #6e6e6e
 $gray: #c7c7c7;
+$yellow: #ffef3b
+$gray: #adadad
 
 body 
 	color: $base-black
@@ -175,7 +180,7 @@ section
 	background: #4eb2f7
 
 .fa 
-	font-size: 50px
+	// font-size: 50px
 	margin-bottom: 22px
 
 .work-btn
@@ -320,3 +325,69 @@ section
 	font-weight: bold
 
 
+//SLIDER
+.feedback 
+	&-box
+		position: relative
+		padding: 15px
+		margin: 0 15px
+	&-shadow
+		padding: 15px
+		padding-top: 64px
+		box-shadow: 0 0 27px 0 rgba(20, 20, 21, 0.09)
+	& p
+		font-size: 17px
+		padding: 0 25px
+		margin-bottom: 20px
+	& span
+		font-weight: bold
+
+.feedback-slider-arrows
+		text-align: center
+		position: absolute
+		top: 50%
+		height: 50px
+		width: 50px
+		transform: translateY(-9px)
+		font-size: 18px
+		padding: 20px
+		box-shadow: 0 3px 14px 0 rgba(20, 20, 21, 0.28)
+		border-radius: 50%
+
+.feedback-slider-arrows:hover
+		background: $base-red
+		color: #fff
+		cursor: pointer
+
+.arrow-left
+		left: 0
+		z-index: 3
+.arrow-right
+		right: 0
+		z-index: 3
+
+.slick-dots
+	margin-bottom: -50px
+
+.slick-dots li.slick-active button:before
+	color: transparent
+	background: $base-red		
+	
+.slick-dots li button:before
+	width: 21px
+	height: 7px
+	background: $gray
+	border-radius: 10px
+	color: transparent
+
+
+.fa-star
+	font-size: 15px
+	color: $yellow
+
+.feedback-pic 
+	margin-bottom: 20px
+	margin-bottom: -64px
+
+.slick-active
+	outline: none
