@@ -45,12 +45,12 @@
           <div class="col-lg-4 col-md-4 col-lg-offset-0 form wow bounceInRight" data-wow-duration="4s">
             <form action="#" class="lid-form" id="main-form-ajax">
               <div class="form-title text-center"><span>Send</span> A Message</div>
-              <input type="hidden" name="whatever" value="Главная форма" id="user_name">
+              <input type="hidden" name="whatever" value="Главная форма" id="name">
               <!-- <label> -->
-              <input type="text" name="name" placeholder="Your Name">
+              <input type="text" id="user_name" name="name" placeholder="Your Name">
               <!-- </label> -->
               <!-- <label> -->
-              <input type="email" name="mail" required placeholder="Your Email">
+              <input type="tell" name="tell" placeholder="Your Phone" id="phone">
               <!-- </label> -->
               <textarea rows="5" name="message" placeholder="Your Message"></textarea>
               <button id="submit-form" class="btn text-center" type="submit">Send Message <span class="form-btn__next">&rarr;</span> </button>
@@ -458,7 +458,7 @@
                 </div>
 
 
-                <div class="modal fade" data-backdrop="true" id="#modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal fade" data-backdrop="true" id="#modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -597,7 +597,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Благодарим за заявку!</h4>
+                            <h4 class="modal-title" id="myModalLabel">Спасибо<span id="userThanks"></span></h4>
                           </div>
                           <div class="modal-body">
                             Скоро мы с Вами связемся!!!
@@ -615,10 +615,9 @@
                     <script src="js/main.js"></script> <!-- Resource jQuery -->
                     <script src="slick/slick.min.js"></script>
                     <script src="js/snap.svg-min.js"></script>
-                    <script src="js/main.js"></script> <!-- Resource jQuery -->
                     <script src="js/wow.min.js"></script>
                     <script>
-                    new WOW().init();
+                      new WOW().init();
                     </script>
 
                     <script>
@@ -694,5 +693,37 @@
                     
                     });
                     </script>
+
+                    <script>
+                      $(document).ready(function() {
+                        $('#submit-form').click(function() {
+                          if ($('input#name').val() !== '') {
+                            $('span#userThanks').text(', ' + $('input#user_name').val());
+                            $('#modal-thanks').modal('show');
+                          }
+                        })
+                      })
+                    </script>
+
+                    <script>
+                      $(document).ready(function() {
+                        $('#submit-form').submit(function() {
+                          if ($('input#name').val() !== '') {
+                            $('#main-form-ajax').submit();
+                          } 
+                          else {
+                            alert('Вы не заполнили ИМЯ');
+                          }
+                        })
+                      })
+                    </script>
+
+                    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+                    <script>
+                      jQuery(function($){
+                        $("#phone").mask("+7 (999) 999-99-99");
+                      });
+                    </script>
+                    
                   </body>
                 </html>
