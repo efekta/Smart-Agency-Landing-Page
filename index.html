@@ -622,13 +622,10 @@
                       })
                     </script>
                     <script>
-                      $(document).ready(function() {
-                        $('#submit-form').click(function() {
-                          if ('input#user_name').val() !== '') {
-                          $('#main-form-ajax').submit();
-                        }
-                        else {
-                          alert('Заполните поле ИМЯ');
+                      $(document).ready(funcrion() {
+                        $('submit-form').click(function() {
+                          if ($('input#user_name').val() !== '') {
+                            $('#main-form-ajax').submit();
                           }
                         })
                       })
