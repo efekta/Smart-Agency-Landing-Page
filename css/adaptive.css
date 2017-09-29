@@ -24,6 +24,12 @@
 	.services__item {
 		display: inline-block
 	}
+	.title {
+    font-size: 30px;
+	}
+	.work-item {
+		margin-top: 60px;
+	}
 }
 
 
@@ -38,6 +44,9 @@
 	}
 	.services__item {
 		display: inline-block
+	}
+	.work-item {
+		margin-top: 60px;
 	}
 }
 
@@ -55,5 +64,8 @@
 	}
 	.services__item {
 		display: inline-block
+	}
+	.work-item {
+		margin-top: 60px;
 	}
 }

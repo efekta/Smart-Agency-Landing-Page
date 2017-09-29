@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
@@ -49,15 +49,16 @@
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-lg-offset-0 form wow bounceInRight" data-wow-duration="4s">
-            <form action="#" method="get" class="lid-form">
+            <form action="#" class="lid-form" id="main-form-ajax">
               <div class="form-title text-center"><span>Send</span> A Message</div>
+              <input type="hidden" name="whatever" value="Главная форма">
               <!-- <label> -->
-              <input type="text" placeholder="Your Name">
+              <input type="text" name="name" placeholder="Your Name">
               <!-- </label> -->
               <!-- <label> -->
-              <input type="email" required placeholder="Your Email">
+              <input type="email" name="mail" required placeholder="Your Email">
               <!-- </label> -->
-              <textarea rows="5" placeholder="Your Message"></textarea>
+              <textarea rows="5" name="message" placeholder="Your Message"></textarea>
               <button class="btn text-center" type="submit">Send Message <span class="form-btn__next">&rarr;</span> </button>
             </form>
           </div>
@@ -128,7 +129,7 @@
                 <div class="sign">
                   <p class="sign__title">Work #1</p>
                   <a href="">
-                    <button class="sign__btn" type="submit">Visit Gallery</button>
+                    <button data-toggle="modal" data-target="#modal-1" class="sign__btn" type="submit">Visit Gallery</button>
                   </a>
                 </div>
               </div>
@@ -141,7 +142,7 @@
                 <div class="sign">
                   <p class="sign__title">Work #2</p>
                   <a href="">
-                    <button class="sign__btn" type="submit">Visit Gallery</button>
+                    <button data-toggle="modal" data-target="#modal2" class="sign__btn" type="button">Visit Gallery</button>
                   </a>
                 </div>
               </div>
@@ -154,7 +155,7 @@
                 <div class="sign">
                   <p class="sign__title">Work #3</p>
                   <a href="">
-                    <button class="sign__btn" type="submit">Visit Gallery</button>
+                    <button data-toggle="modal" data-target="#modal3" class="sign__btn" type="button">Visit Gallery</button>
                   </a>
                 </div>
               </div>
@@ -169,7 +170,7 @@
                 <div class="sign">
                   <p class="sign__title">Work #4</p>
                   <a href="">
-                    <button class="sign__btn" type="submit">Visit Gallery</button>
+                    <button data-toggle="modal" data-target="#modal4" class="sign__btn" type="button">Visit Gallery</button>
                   </a>
                 </div>
               </div>
@@ -182,7 +183,7 @@
                 <div class="sign">
                   <p class="sign__title">Work #5</p>
                   <a href="">
-                    <button class="sign__btn" type="submit">Visit Gallery</button>
+                    <button data-toggle="modal" data-target="#modal5" class="sign__btn" type="button">Visit Gallery</button>
                   </a>
                 </div>
               </div>
@@ -195,7 +196,7 @@
                 <div class="sign">
                   <p class="sign__title">Work #6</p>
                   <a href="">
-                    <button class="sign__btn" type="submit">Visit Gallery</button>
+                    <button data-toggle="modal" data-target="#modal6" class="sign__btn" type="button">Visit Gallery</button>
                   </a>
                 </div>
               </div>
@@ -452,6 +453,113 @@
                   </div>
                 </footer>
                 <!-- MODALS -->
+                <div class="modal fade" data-backdrop="true" id="#modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Заголовок окна</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" data-backdrop="true" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Заголовок окна</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" data-backdrop="true" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Заголовок окна</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" data-backdrop="true" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Заголовок окна</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" data-backdrop="true" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Заголовок окна</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" data-backdrop="true" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Заголовок окна</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="cd-modal" data-modal="modal-trigger">
                   <div class="cd-svg-bg"
                     data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
@@ -478,6 +586,28 @@
                     <a href="#0" class="modal-close">Close</a>
                     </div> <!-- cd-modal -->
                     <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+
+
+                    <!-- Modal THANKS-->
+                <div class="modal fade" data-backdrop="true" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Благодарим за заявку!</h4>
+                      </div>
+                      <div class="modal-body">
+                        Скоро мы с Вами связемся!!!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                     <script src="js/bootstrap.min.js"></script>
                     <script src="js/snap.svg-min.js"></script>
@@ -531,6 +661,23 @@
                     <script src="js/wow.min.js"></script>
                     <script>
                     new WOW().init();
+                    </script>
+                    <script>
+                    $(document).ready(function() {
+                    $("#main-form-ajax").submit(function() {
+                    $.ajax({
+                    type: "POST",
+                    url: "../php/mail.php",
+                    data: $(this).serialize()
+                    }).done(function() {
+                    $(this).find("input").val("");
+                    $('#modal-thanks').modal('show');
+                    $("#fmain-form-ajax").trigger("reset");
+                    });
+                    return false;
+                    });
+                    
+                    });
                     </script>
                   </body>
                 </html>
