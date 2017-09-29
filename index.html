@@ -27,12 +27,6 @@
           </div>
           <div class="col-xs-6">
             <div class="main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Портфолио</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
-              </ul>
               <a href="#" class="nav-toogle">
                 <span class="toogle-icon"></span>
               </a>
@@ -51,7 +45,7 @@
           <div class="col-lg-4 col-md-4 col-lg-offset-0 form wow bounceInRight" data-wow-duration="4s">
             <form action="#" class="lid-form" id="main-form-ajax">
               <div class="form-title text-center"><span>Send</span> A Message</div>
-              <input type="hidden" name="whatever" value="Главная форма">
+              <input type="hidden" name="whatever" value="Главная форма" id="user_name">
               <!-- <label> -->
               <input type="text" name="name" placeholder="Your Name">
               <!-- </label> -->
@@ -59,7 +53,7 @@
               <input type="email" name="mail" required placeholder="Your Email">
               <!-- </label> -->
               <textarea rows="5" name="message" placeholder="Your Message"></textarea>
-              <button class="btn text-center" type="submit">Send Message <span class="form-btn__next">&rarr;</span> </button>
+              <button id="submit-form" class="btn text-center" type="submit">Send Message <span class="form-btn__next">&rarr;</span> </button>
             </form>
           </div>
         </div>
@@ -453,6 +447,17 @@
                   </div>
                 </footer>
                 <!-- MODALS -->
+                <div class="overlay-nav">
+                  <span class="close-overlay-nav">&times;</span>
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Портфолио</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                  </ul>
+                </div>
+
+
                 <div class="modal fade" data-backdrop="true" id="#modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -586,33 +591,53 @@
                     <a href="#0" class="modal-close">Close</a>
                     </div> <!-- cd-modal -->
                     <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
-
-
                     <!-- Modal THANKS-->
-                <div class="modal fade" data-backdrop="true" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Благодарим за заявку!</h4>
-                      </div>
-                      <div class="modal-body">
-                        Скоро мы с Вами связемся!!!
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <div class="modal fade" data-backdrop="true" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Благодарим за заявку!</h4>
+                          </div>
+                          <div class="modal-body">
+                            Скоро мы с Вами связемся!!!
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-
-
+                    
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                    <script>
+                      $(document).ready(function() {
+                        var $nav = $('.nav-toogle');
+                            $nav.click(function() {
+                              $('.overlay-nav').slideToggle('slow');
+                            })
+                        $('.close-overlay-nav').click(function() {
+                          $(".overlay-nav").hide('slow');
+                        })
+                      })
+                    </script>
+                    <script>
+                      $(document).ready(function() {
+                        $('#submit-form').click(function() {
+                          if ('input#user_name').val() !== '') {
+                          $('#main-form-ajax').submit();
+                        }
+                        else {
+                          alert('Заполните поле ИМЯ');
+                          }
+                        })
+                      })
+                    </script>
                     <script src="js/bootstrap.min.js"></script>
                     <script src="js/snap.svg-min.js"></script>
                     <script src="js/main.js"></script> <!-- Resource jQuery -->
                     <script src="slick/slick.min.js"></script>
+
                     <script>
                     $(document).ready(function(){
                     $('.feedback-slider').slick({
@@ -656,6 +681,7 @@
                     });
                     });
                     </script>
+
                     <script src="js/snap.svg-min.js"></script>
                     <script src="js/main.js"></script> <!-- Resource jQuery -->
                     <script src="js/wow.min.js"></script>
