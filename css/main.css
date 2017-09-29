@@ -148,6 +148,12 @@ section { margin: 5% 0; }
 
 .toogle-icon::after { -webkit-transform: translateY(16px); -ms-transform: translateY(16px); transform: translateY(16px); }
 
+.nav-toogle:hover .toogle-icon::before { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+
+.nav-toogle:hover .toogle-icon::after { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); -webkit-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+
+.nav-toogle:hover .toogle-icon { height: 0; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: -webkit-transform 0.3s; transition: -webkit-transform 0.3s; -o-transition: transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; }
+
 .main-title { margin: 5% 0; }
 
 .title { font-family: open_sanssemibold; font-size: 50px; }
