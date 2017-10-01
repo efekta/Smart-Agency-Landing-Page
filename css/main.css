@@ -327,4 +327,6 @@ svg { max-width: 100%; }
 
 #parallax img { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; }
 
+.map, #google { margin: 0; }
+
 /*# sourceMappingURL=main.css.map */
